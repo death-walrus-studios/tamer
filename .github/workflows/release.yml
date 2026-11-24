@@ -97,3 +97,23 @@ jobs:
           prerelease=""
           case "$GITHUB_REF_NAME" in v0.*) prerelease="--prerelease" ;; esac
           gh release create "$GITHUB_REF_NAME" "$ZIP_FILE" --title "Tamer ${GITHUB_REF_NAME#v}" --notes-file notes.md $prerelease
+
+      # After everything else, and allowed to fail, so a problem at Wago never holds up CurseForge.
+      - name: Upload to Wago
+        if: startsWith(github.ref, 'refs/tags/')
+        continue-on-error: true
+        env:
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          WAGO_PROJECT_ID: 56nbo569
+        run: |
+          if [ -z "$WAGO_API_TOKEN" ]; then
+            echo "::warning::Skipped Wago: no WAGO_API_TOKEN secret (see docs/RELEASING.md)"
+            exit 0
+          fi
+          stability=stable
+          case "$GITHUB_REF_NAME" in v0.*) stability=beta ;; esac
+          metadata="$(jq -n --rawfile notes notes.md --arg label "${GITHUB_REF_NAME#v}" --arg stability "$stability" --arg patch "$GAME_VERSION" \
+            '{label: $label, stability: $stability, changelog: $notes, supported_forever_patches: [$patch]}')"
+          curl -sS --fail-with-body -H "Authorization: Bearer $WAGO_API_TOKEN" -H "Accept: application/json" \
+            --form-string "metadata=$metadata" -F "file=@$ZIP_FILE" \
+            "https://addons.wago.io/api/projects/$WAGO_PROJECT_ID/version"
