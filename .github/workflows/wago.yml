@@ -34,8 +34,8 @@ jobs:
           gh release download "$TAG" --pattern '*.zip' --dir dist
           gh release view "$TAG" --json body --jq .body > notes.md
           zip_file="$(ls dist/*.zip)"
+          # Stable even before 1.0: Wago shows no download button for an addon with only betas.
           stability=stable
-          case "$TAG" in v0.*) stability=beta ;; esac
           metadata="$(jq -n --rawfile notes notes.md --arg label "${TAG#v}" --arg stability "$stability" --arg patch "$GAME_VERSION" \
             '{label: $label, stability: $stability, changelog: $notes, supported_forever_patches: [$patch]}')"
           curl -sS --fail-with-body -H "Authorization: Bearer $WAGO_API_TOKEN" -H "Accept: application/json" \
