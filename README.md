@@ -30,6 +30,8 @@ The game only shows which ranks you know while Beast Training is open, so cast B
 
 The beast list is built in, from public Classic Era data. It's in `addon/Tamer/Data.lua`.
 
+[Join us on Discord](https://discord.gg/GyrhmXnQTW) to ask questions, report bugs and suggest ideas.
+
 ## Setup
 
 1. Close the game and extract the zip into your AddOns folder, so its files end up in `AddOns/Tamer/`:
