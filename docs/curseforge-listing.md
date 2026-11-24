@@ -19,7 +19,7 @@ This is what's live from 0.2.0. The gallery has the five images in [docs/screens
 
 ## Description
 
-![Tamer](https://raw.githubusercontent.com/alexinslc/tamer/main/art/banner.png)
+![Tamer](https://raw.githubusercontent.com/death-walrus-studios/tamer/main/art/banner.png)
 
 **Your pet just hit level 16. Can it learn something new? Do you even know that rank yet? Where do you find the beast that teaches it?** Tamer answers all three in one small window, so you can stop digging through lists and get back to hunting.
 
@@ -29,7 +29,7 @@ This is what's live from 0.2.0. The gallery has the five images in [docs/screens
 
 Call your pet and open Tamer.
 
-![The Tamer window](https://raw.githubusercontent.com/alexinslc/tamer/main/docs/screenshots/curseforge/01-window.png)
+![The Tamer window](https://raw.githubusercontent.com/death-walrus-studios/tamer/main/docs/screenshots/curseforge/01-window.png)
 
 - **Green:** what your pet can learn right now, with the training points it costs. Press **Teach** to open Beast Training.
 - **Gold:** what's coming soon, and how many levels or points it needs.
@@ -37,7 +37,7 @@ Call your pet and open Tamer.
 
 Hover anything for the details, such as every beast that teaches a rank, with its level and zone.
 
-![Beasts that teach Bite](https://raw.githubusercontent.com/alexinslc/tamer/main/docs/screenshots/curseforge/02-find-tooltip.png)
+![Beasts that teach Bite](https://raw.githubusercontent.com/death-walrus-studios/tamer/main/docs/screenshots/curseforge/02-find-tooltip.png)
 
 ### It keeps up with you
 
@@ -53,7 +53,7 @@ That's the only time it speaks up.
 2. Open Beast Training once, so Tamer can see which ranks you know.
 3. Click the Tamer icon on the minimap, or type `/tamer`.
 
-![The Tamer minimap button](https://raw.githubusercontent.com/alexinslc/tamer/main/docs/screenshots/curseforge/04-minimap.png)
+![The Tamer minimap button](https://raw.githubusercontent.com/death-walrus-studios/tamer/main/docs/screenshots/curseforge/04-minimap.png)
 
 ### Commands
 
@@ -69,4 +69,4 @@ That's the only time it speaks up.
 
 The beast list is built from public World of Warcraft Classic data, and it's still being checked against Forever. If a beast is in the wrong place or teaches something different on Forever, leave a comment and it'll be fixed. Screenshots are from the real game. This addon is free, and it isn't affiliated with or endorsed by Blizzard Entertainment.
 
-Found a bug or have an idea? Leave a comment, or open an issue on [GitHub](https://github.com/alexinslc/tamer).
+Found a bug or have an idea? Leave a comment, or open an issue on [GitHub](https://github.com/death-walrus-studios/tamer).
