@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: Tamer
 ## Notes: Shows what your Hunter pet can train now, what's next, and which beast teaches what you're missing.
-## Version: 0.3.0
+## Version: 0.3.1
 ## IconTexture: Interface\AddOns\Tamer\Textures\Icon
 ## SavedVariables: TamerDB
 

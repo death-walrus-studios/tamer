@@ -207,10 +207,7 @@ Both follow Fireside Tales.
 
 ## 10. Open questions
 
-- Forever has abilities Classic doesn't, such as Swipe for bears. Tamer ignores them until the data has their ranks and teachers.
-- How closely does Forever's beast data match Classic Era? Spot checks during milestone 5 will show how much the public data needs fixing.
-- Which zones or level range should the first data cover? The plan says 10 to 30.
-- These ranks up to level 30 have no beast in `Data.lua` yet, because Wowhead started asking for a human check partway through: Dive 1, Furious Howl 1 and 2, Lightning Breath 1 and 3, Prowl 1, Scorpid Poison 1 and 2, Screech 1 and 2, and Shell Shield 1.
-- Does `UnitCreatureFamily` return "Owl" or "Bird of Prey" on Forever? Tamer accepts both for now.
-- Wowhead's Forever pages list Pet Trainers as also teaching some ranks of Bite, Claw, Cower and Dash. If that's true on Forever, those ranks need a trainer note too.
-- Wowhead Classic puts Shadow Resistance rank 4 at level 40, the same as rank 3, while the other resistances put rank 4 at 50. Check it in the game.
+- About half the beast-taught ranks still have no teacher in `Data.lua`. Wowhead's Forever "Taught by" tabs list none for them: Charge 4-6, Cower 5, Dive, Lightning Breath (except rank 2), Scorpid Poison, Shell Shield, Thunderstomp 2-4, Furious Howl 4, Savage Rend 4, Screech 4, Web 2-5, and all of Sonic Blast, Pinch, Tendon Rip, Dismember and Dust Cloud. A few more are only in zones Wowhead didn't name, such as Mount Hyjal.
+- Wowhead's Forever pages list Pet Trainers as also teaching Bite 1-6, Claw 1-6, Dash 1-2, Prowl 1 and Swipe 2. If a Pet Trainer's window shows them in the game, those ranks can point to the trainer too.
+- Training point costs for Forever's new abilities, and for Thunderstomp 4, aren't published. Beast Training shows them.
+- Does `UnitCreatureFamily` return "Owl" or "Bird of Prey" on Forever? Tamer accepts both.

@@ -760,7 +760,7 @@ section("Data.lua", function()
 		local lastLevel = 0
 		for rank, entry in ipairs(info.ranks or {}) do
 			check(("%s %d: has a level"):format(name, rank), type(entry.level) == "number")
-			if not info.forever then
+			if not info.forever and not entry.newInForever then
 				check(("%s %d: has a cost"):format(name, rank), type(entry.cost) == "number")
 			end
 			check(("%s %d: levels go up"):format(name, rank), (entry.level or 0) >= lastLevel)
@@ -784,6 +784,7 @@ section("Data.lua", function()
 		for _, taught in ipairs(beast.teaches or {}) do
 			local info = data.Abilities[taught[1]]
 			check(label .. ": teaches a real ability", info ~= nil, taught[1])
+			check(label .. ": each rank is just { ability, rank }", #taught == 2 and type(taught[2]) == "number", taught[1])
 			if info then
 				check(label .. ": teaches a real rank", info.ranks[taught[2]] ~= nil, taught[1] .. " " .. tostring(taught[2]))
 				local allowed = info.families == "all"

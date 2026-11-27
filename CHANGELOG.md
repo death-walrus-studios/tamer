@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1
+
+- Added beasts that teach Swipe, Web, Savage Rend, Mine!, Trickster's Dance, Furious Howl, Prowl and Screech, from Forever's own data.
+- Added Thunderstomp rank 4.
+
 ## 0.3.0
 
 - Added a Pet Trainer card for new ranks a Pet Trainer has for your pet, and a chat line when it gets new ones.

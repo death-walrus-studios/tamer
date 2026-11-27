@@ -209,6 +209,8 @@ ns.Data.Abilities = {
 			{ level = 30, cost = 15 },
 			{ level = 40, cost = 20 },
 			{ level = 50, cost = 25 },
+			-- New in Forever (Wowhead's Forever database). Its cost isn't known yet.
+			{ level = 60, newInForever = true },
 		},
 	},
 
@@ -348,7 +350,7 @@ ns.Data.Beasts = {
 	{ name = "Dreadmaw Crocolisk", family = "Crocolisk", level = { 9, 11 }, zone = "Durotar", teaches = { { "Bite", 1 } } },
 	{ name = "Coyote", family = "Wolf", level = { 10, 11 }, zone = "Westfall", teaches = { { "Bite", 2 } } },
 	{ name = "Giant Webwood Spider", family = "Spider", level = { 10, 11 }, zone = "Teldrassil", teaches = { { "Bite", 2 } } },
-	{ name = "Worg", family = "Wolf", level = { 10, 11 }, zone = "Silverpine Forest", teaches = { { "Bite", 2 } } },
+	{ name = "Worg", family = "Wolf", level = { 10, 11 }, zone = "Silverpine Forest", teaches = { { "Bite", 2 }, { "Furious Howl", 1 } } },
 	{ name = "Oasis Snapjaw", family = "Turtle", level = { 15, 16 }, zone = "The Barrens", teaches = { { "Bite", 2 } } },
 	{ name = "Wood Lurker", family = "Spider", level = { 17, 18 }, zone = "Loch Modan", teaches = { { "Bite", 3 } } },
 	{ name = "Greater Tarantula", family = "Spider", level = { 19, 20 }, zone = "Redridge Mountains", teaches = { { "Bite", 3 } } },
@@ -357,13 +359,13 @@ ns.Data.Beasts = {
 	{ name = "Black Ravager", family = "Wolf", level = { 24, 25 }, zone = "Duskwood", teaches = { { "Bite", 4 } } },
 	{ name = "Giant Wetlands Crocolisk", family = "Crocolisk", level = { 25, 26 }, zone = "Wetlands", teaches = { { "Bite", 4 } } },
 	{ name = "Giant Moss Creeper", family = "Spider", level = { 24, 25 }, zone = "Hillsbrad Foothills", teaches = { { "Bite", 4 } } },
-	{ name = "Ghostpaw Alpha", family = "Wolf", level = { 27, 28 }, zone = "Ashenvale", teaches = { { "Bite", 4 } } },
+	{ name = "Ghostpaw Alpha", family = "Wolf", level = { 27, 28 }, zone = "Ashenvale", teaches = { { "Bite", 4 }, { "Furious Howl", 2 } } },
 	{ name = "Plains Creeper", family = "Spider", level = { 32, 33 }, zone = "Arathi Highlands", teaches = { { "Bite", 5 } } },
 	{ name = "Sparkleshell Snapper", family = "Turtle", level = { 34, 35 }, zone = "Thousand Needles", teaches = { { "Bite", 5 } } },
 	{ name = "Drywallow Crocolisk", family = "Crocolisk", level = { 35, 36 }, zone = "Dustwallow Marsh", teaches = { { "Bite", 5 } } },
 	{ name = "Deathstrike Tarantula", family = "Spider", level = { 40, 41 }, zone = "Swamp of Sorrows", teaches = { { "Bite", 6 } } },
 	{ name = "Drywallow Daggermaw", family = "Crocolisk", level = { 40, 41 }, zone = "Dustwallow Marsh", teaches = { { "Bite", 6 } } },
-	{ name = "Longtooth Runner", family = "Wolf", level = { 40, 41 }, zone = "Feralas", teaches = { { "Bite", 6 }, { "Dash", 2 } } },
+	{ name = "Longtooth Runner", family = "Wolf", level = { 40, 41 }, zone = "Feralas", teaches = { { "Bite", 6 }, { "Dash", 2 }, { "Furious Howl", 3 } } },
 	{ name = "Saltwater Snapjaw", family = "Turtle", level = { 49, 50 }, zone = "The Hinterlands", teaches = { { "Bite", 7 } } },
 	{ name = "Felpaw Ravager", family = "Wolf", level = { 51, 52 }, zone = "Felwood", teaches = { { "Bite", 7 } } },
 
@@ -384,14 +386,14 @@ ns.Data.Beasts = {
 	{ name = "Scorpashi Snapper", family = "Scorpid", level = { 30, 31 }, zone = "Desolace", teaches = { { "Claw", 4 } } },
 	{ name = "Scorpid Reaver", family = "Scorpid", level = { 31, 32 }, zone = "Thousand Needles", teaches = { { "Claw", 4 } } },
 	{ name = "Scorpashi Lasher", family = "Scorpid", level = { 34, 35 }, zone = "Desolace", teaches = { { "Claw", 5 } } },
-	{ name = "Ironfur Bear", family = "Bear", level = { 41, 42 }, zone = "Feralas", teaches = { { "Claw", 6 } } },
+	{ name = "Ironfur Bear", family = "Bear", level = { 41, 42 }, zone = "Feralas", teaches = { { "Claw", 6 }, { "Swipe", 3 } } },
 	{ name = "Scorpid Hunter", family = "Scorpid", level = { 40, 41 }, zone = "Tanaris", teaches = { { "Claw", 6 } } },
 	{ name = "Silt Crawler", family = "Crab", level = { 40, 41 }, zone = "Swamp of Sorrows", teaches = { { "Claw", 6 } } },
 	{ name = "Ironfur Patriarch", family = "Bear", level = { 48, 49 }, zone = "Feralas", teaches = { { "Claw", 7 } } },
-	{ name = "Angerclaw Mauler", family = "Bear", level = { 49, 50 }, zone = "Felwood", teaches = { { "Claw", 7 } } },
+	{ name = "Angerclaw Mauler", family = "Bear", level = { 49, 50 }, zone = "Felwood", teaches = { { "Claw", 7 }, { "Swipe", 4 } } },
 	{ name = "Ironbeak Hunter", family = "Owl", level = { 50, 51 }, zone = "Felwood", teaches = { { "Claw", 7 } } },
 	{ name = "Elder Shardtooth", family = "Bear", level = { 57, 58 }, zone = "Winterspring", teaches = { { "Claw", 8 } } },
-	{ name = "Winterspring Screecher", family = "Owl", level = { 57, 59 }, zone = "Winterspring", teaches = { { "Claw", 8 } } }, -- Forever: 57-60
+	{ name = "Winterspring Screecher", family = "Owl", level = { 57, 59 }, zone = "Winterspring", teaches = { { "Claw", 8 }, { "Mine!", 5 } } }, -- Forever: 57-60
 
 	-- Charge
 	{ name = "Longsnout", family = "Boar", level = { 10, 11 }, zone = "Elwynn Forest", teaches = { { "Charge", 1 } } },
@@ -417,7 +419,7 @@ ns.Data.Beasts = {
 	{ name = "Feral Mountain Lion", family = "Cat", level = { 27, 28 }, zone = "Hillsbrad Foothills", teaches = { { "Cower", 3 } } },
 	{ name = "Young Stranglethorn Tiger", family = "Cat", level = { 30, 31 }, zone = "Stranglethorn Vale", teaches = { { "Cower", 3 } } },
 	{ name = "Young Panther", family = "Cat", level = { 30, 31 }, zone = "Stranglethorn Vale", teaches = { { "Cower", 3 } } },
-	{ name = "Ridge Stalker", family = "Cat", level = { 36, 37 }, zone = "Badlands", teaches = { { "Cower", 4 } } },
+	{ name = "Ridge Stalker", family = "Cat", level = { 36, 37 }, zone = "Badlands", teaches = { { "Cower", 4 }, { "Prowl", 1 } } },
 	{ name = "Ridge Huntress", family = "Cat", level = { 38, 39 }, zone = "Badlands", teaches = { { "Cower", 4 } } },
 	{ name = "Frostsaber Cub", family = "Cat", level = { 55, 56 }, zone = "Winterspring", teaches = { { "Cower", 6 } } },
 
@@ -426,11 +428,11 @@ ns.Data.Beasts = {
 	{ name = "Kurzen War Tiger", family = "Cat", level = { 32, 33 }, zone = "Stranglethorn Vale", teaches = { { "Dash", 1 } } },
 	{ name = "Bonepaw Hyena", family = "Hyena", level = { 33, 35 }, zone = "Desolace", teaches = { { "Dash", 1 } } },
 	{ name = "Crag Coyote", family = "Wolf", level = { 35, 36 }, zone = "Badlands", teaches = { { "Dash", 1 }, { "Bite", 5 } } },
-	{ name = "Ridge Stalker Patriarch", family = "Cat", level = { 40, 41 }, zone = "Badlands", teaches = { { "Dash", 2 } } },
+	{ name = "Ridge Stalker Patriarch", family = "Cat", level = { 40, 41 }, zone = "Badlands", teaches = { { "Dash", 2 }, { "Prowl", 2 } } },
 	{ name = "Starving Blisterpaw", family = "Hyena", level = { 41, 42 }, zone = "Tanaris", teaches = { { "Dash", 2 } } },
-	{ name = "Elder Shadowmaw Panther", family = "Cat", level = { 42, 43 }, zone = "Stranglethorn Vale", teaches = { { "Dash", 2 } } },
+	{ name = "Elder Shadowmaw Panther", family = "Cat", level = { 42, 43 }, zone = "Stranglethorn Vale", teaches = { { "Dash", 2 }, { "Prowl", 2 } } },
 	{ name = "Frostsaber Huntress", family = "Cat", level = { 58, 59 }, zone = "Winterspring", teaches = { { "Dash", 3 } } },
-	{ name = "Frostsaber Stalker", family = "Cat", level = { 59, 60 }, zone = "Winterspring", teaches = { { "Dash", 3 } } },
+	{ name = "Frostsaber Stalker", family = "Cat", level = { 59, 60 }, zone = "Winterspring", teaches = { { "Dash", 3 }, { "Prowl", 3 } } },
 
 	-- Lightning Breath and Thunderstomp
 	-- Which rank each teaches comes from the beasts' own warcraft.wiki.gg pages ("Deviate Venomwing",
@@ -439,4 +441,66 @@ ns.Data.Beasts = {
 	{ name = "Deviate Venomwing", family = "Wind Serpent", level = { 20, 21 }, zone = "Wailing Caverns", teaches = { { "Lightning Breath", 2 } } },
 	{ name = "Deviate Dreadfang", family = "Wind Serpent", level = { 20, 21 }, zone = "Wailing Caverns", teaches = { { "Lightning Breath", 2 } } },
 	{ name = "Jungle Thunderer", family = "Gorilla", level = { 37, 38 }, zone = "Stranglethorn Vale", teaches = { { "Thunderstomp", 1 } } },
+
+	-- Forever ---------------------------------------------------------------------------
+	-- Teachers for ranks the list above had none for, including Forever's new family
+	-- abilities. Source: the "Taught by" tab of each rank's spell page on Wowhead's Forever
+	-- database (wowhead.com/forever/spell=<id>), read 2026-11-27, with Forever's levels and
+	-- zones. Up to four per rank, normal beasts before rare ones, lowest level first. Beasts
+	-- only in zones Wowhead didn't name (such as Mount Hyjal) are left out.
+	{ name = "Rabid Shardtooth", family = "Bear", level = { 59, 60 }, zone = "Winterspring", teaches = { { "Bite", 8 }, { "Swipe", 5 } } },
+	{ name = "Giant Moonstrider", family = "Tallstrider", level = { 60, 60 }, zone = "Moonglade", teaches = { { "Bite", 8 } } },
+	{ name = "Coyote Packleader", family = "Wolf", level = { 11, 12 }, zone = "Westfall", teaches = { { "Furious Howl", 1 } } },
+	{ name = "Coldrasp", family = "Wolf", level = { 12, 12 }, zone = "Tirisfal Glades", teaches = { { "Furious Howl", 1 } } }, -- rare
+	{ name = "Gorefang", family = "Wolf", level = { 13, 13 }, zone = "Silverpine Forest", teaches = { { "Furious Howl", 1 } } }, -- rare
+	{ name = "Black Ravager Mastiff", family = "Wolf", level = { 25, 26 }, zone = "Duskwood", teaches = { { "Furious Howl", 2 } } },
+	{ name = "Elder Crag Coyote", family = "Wolf", level = { 39, 40 }, zone = "Badlands", teaches = { { "Furious Howl", 2 } } },
+	{ name = "Longtooth Howler", family = "Wolf", level = { 43, 44 }, zone = "Feralas", teaches = { { "Furious Howl", 2 } } },
+	{ name = "Silvermane Wolf", family = "Wolf", level = { 43, 44 }, zone = "The Hinterlands", teaches = { { "Furious Howl", 3 } } },
+	{ name = "Felpaw Wolf", family = "Wolf", level = { 47, 48 }, zone = "Felwood", teaches = { { "Furious Howl", 3 } } },
+	{ name = "Child of Jai'vhanel", family = "Owl", level = { 10, 12 }, zone = "Darkshore", teaches = { { "Mine!", 1 } } },
+	{ name = "Jai'vhanel", family = "Owl", level = { 12, 12 }, zone = "Darkshore", teaches = { { "Mine!", 1 } } },
+	{ name = "Nightscreech", family = "Owl", level = { 10, 10 }, zone = "Teldrassil", teaches = { { "Mine!", 1 } } }, -- rare
+	{ name = "Carrodin", family = "Owl", level = { 25, 25 }, zone = "Wetlands", teaches = { { "Mine!", 2 } } }, -- rare
+	{ name = "Marsh Owl", family = "Owl", level = { 34, 36 }, zone = "Alterac Mountains", teaches = { { "Mine!", 3 } } },
+	{ name = "Ironbeak Owl", family = "Owl", level = { 48, 49 }, zone = "Felwood", teaches = { { "Mine!", 4 } } },
+	{ name = "Winterspring Owl", family = "Owl", level = { 54, 56 }, zone = "Winterspring", teaches = { { "Mine!", 4 } } },
+	{ name = "Mountain Lion", family = "Cat", level = { 32, 33 }, zone = "Alterac Mountains", teaches = { { "Prowl", 1 } } },
+	{ name = "Shadowmaw Panther", family = "Cat", level = { 37, 38 }, zone = "Stranglethorn Vale", teaches = { { "Prowl", 1 } } },
+	{ name = "Shadow Panther", family = "Cat", level = { 39, 40 }, zone = "Swamp of Sorrows", teaches = { { "Prowl", 1 } } },
+	{ name = "King Bangalash", family = "Cat", level = { 43, 43 }, zone = "Stranglethorn Vale", teaches = { { "Prowl", 2 } } }, -- rare
+	{ name = "Jaguero Stalker", family = "Cat", level = { 50, 50 }, zone = "Stranglethorn Vale", teaches = { { "Prowl", 3 } } },
+	{ name = "Sunscale Screecher", family = "Raptor", level = { 13, 15 }, zone = "The Barrens", teaches = { { "Savage Rend", 1 } } },
+	{ name = "Highland Raptor", family = "Raptor", level = { 23, 24 }, zone = "Wetlands", teaches = { { "Savage Rend", 2 } } },
+	{ name = "Highland Lashtail", family = "Raptor", level = { 24, 25 }, zone = "Wetlands", teaches = { { "Savage Rend", 2 } } },
+	{ name = "Mottled Screecher", family = "Raptor", level = { 24, 25 }, zone = "Wetlands", teaches = { { "Savage Rend", 2 } } },
+	{ name = "Highland Scytheclaw", family = "Raptor", level = { 25, 26 }, zone = "Wetlands", teaches = { { "Savage Rend", 2 } } },
+	{ name = "Bloodfen Screecher", family = "Raptor", level = { 36, 37 }, zone = "Dustwallow Marsh", teaches = { { "Savage Rend", 3 } } },
+	{ name = "Highland Fleshstalker", family = "Raptor", level = { 36, 37 }, zone = "Arathi Highlands", teaches = { { "Savage Rend", 3 } } },
+	{ name = "Young Jungle Stalker", family = "Raptor", level = { 36, 37 }, zone = "Stranglethorn Vale", teaches = { { "Savage Rend", 3 } } },
+	{ name = "Bloodfen Scytheclaw", family = "Raptor", level = { 37, 38 }, zone = "Dustwallow Marsh", teaches = { { "Savage Rend", 3 } } },
+	{ name = "Venomhide Ravasaur", family = "Raptor", level = { 50, 51 }, zone = "Un'Goro Crater", teaches = { { "Savage Rend", 5 } } },
+	{ name = "Taloned Swoop", family = "Carrion Bird", level = { 8, 10 }, zone = "Mulgore", teaches = { { "Screech", 1 } } },
+	{ name = "Young Fleshripper", family = "Carrion Bird", level = { 10, 11 }, zone = "Westfall", teaches = { { "Screech", 1 } } },
+	{ name = "Greater Fleshripper", family = "Carrion Bird", level = { 16, 17 }, zone = "Westfall", teaches = { { "Screech", 1 } } },
+	{ name = "Lord Condar", family = "Carrion Bird", level = { 15, 16 }, zone = "Loch Modan", teaches = { { "Screech", 1 } } }, -- rare
+	{ name = "Salt Flats Vulture", family = "Carrion Bird", level = { 32, 34 }, zone = "Thousand Needles", teaches = { { "Screech", 2 } } },
+	{ name = "Dread Ripper", family = "Carrion Bird", level = { 39, 40 }, zone = "Desolace", teaches = { { "Screech", 2 } } },
+	{ name = "Gharrik", family = "Carrion Bird", level = { 40, 40 }, zone = "Badlands", teaches = { { "Screech", 2 } } },
+	{ name = "Zopilote", family = "Carrion Bird", level = { 43, 43 }, zone = "Tanaris", teaches = { { "Screech", 2 } } }, -- rare
+	{ name = "Carrion Vulture", family = "Carrion Bird", level = { 50, 52 }, zone = "Western Plaguelands", teaches = { { "Screech", 3 } } },
+	{ name = "Giant Grizzled Bear", family = "Bear", level = { 12, 13 }, zone = "Silverpine Forest", teaches = { { "Swipe", 1 } } },
+	{ name = "Grizzled Black Bear", family = "Bear", level = { 13, 14 }, zone = "Loch Modan", teaches = { { "Swipe", 1 } } },
+	{ name = "Old Vicejaw", family = "Bear", level = { 14, 14 }, zone = "Silverpine Forest", teaches = { { "Swipe", 1 } } }, -- rare
+	{ name = "Elder Gray Bear", family = "Bear", level = { 25, 26 }, zone = "Hillsbrad Foothills", teaches = { { "Swipe", 2 } } },
+	{ name = "Maddened Rotclaw", family = "Bear", level = { 25, 26 }, zone = "Wetlands", teaches = { { "Swipe", 2 } } },
+	{ name = "Big Samras", family = "Bear", level = { 27, 27 }, zone = "Hillsbrad Foothills", teaches = { { "Swipe", 2 } } }, -- rare
+	{ name = "Grizzled Ironfur Bear", family = "Bear", level = { 44, 45 }, zone = "Feralas", teaches = { { "Swipe", 3 } } },
+	{ name = "Angerclaw Bear", family = "Bear", level = { 47, 48 }, zone = "Felwood", teaches = { { "Swipe", 3 } } },
+	{ name = "Ursius", family = "Bear", level = { 56, 56 }, zone = "Winterspring", teaches = { { "Swipe", 5 } } }, -- rare
+	{ name = "Gray Fox", family = "Fox", level = { 22, 23 }, zone = "Duskwood", teaches = { { "Trickster's Dance", 1 } } },
+	{ name = "Moss Stalker", family = "Spider", level = { 12, 13 }, zone = "Silverpine Forest", teaches = { { "Web", 1 } } },
+	{ name = "Cliff Lurker", family = "Spider", level = { 13, 14 }, zone = "Loch Modan", teaches = { { "Web", 1 } } },
+	{ name = "Mist Creeper", family = "Spider", level = { 13, 14 }, zone = "Silverpine Forest", teaches = { { "Web", 1 } } },
+	{ name = "Deepmoss Hatchling", family = "Spider", level = { 14, 14 }, zone = "Stonetalon Mountains", teaches = { { "Web", 1 } } },
 }
